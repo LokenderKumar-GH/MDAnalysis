@@ -2,9 +2,8 @@
 import mdtraj as md #import mdtraj as md
 import matplotlib.pyplot as plt 
 
-%matplotlib inline 
-import mdtraj as md #import mdtraj as md
-import matplotlib.pyplot as plt 
+traj = md.load('md_0_1_noPBC.xtc', top= 'md_0_1.gro')
+traj
 
 traj.center_coordinates()#precenter the trajectory 
 
